@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.icz.pojo.UserTable_Pojo" table="user_table">
+		<id name="u_id">
+			<generator class="increment" />
+		</id>
+		<property name="u_fname"></property>
+		<property name="u_lname"></property>
+		<property name="u_dob"></property>
+		<property name="u_gender"></property>
+		<property name="u_phone"></property>
+		<property name="u_emailid"></property>
+		<property name="u_city"></property>
+		<property name="u_state"></property>
+		<property name="u_zip"></property>
+		<property name="u_password"></property>
+
+	</class>
+</hibernate-mapping>

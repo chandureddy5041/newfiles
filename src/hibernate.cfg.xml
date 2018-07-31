@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/icz</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		
+		<mapping resource="com/icz/pojo/ContactUs_Pojo.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/ExperienceDetails_Pojo.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/FresherDetails_Pojo.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/Questions.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/QuestionsPP.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/ResultPP.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/ResultOT_Pojo.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/Statements.hbm.xml"></mapping>
+		<mapping resource="com/icz/pojo/UserTable_Pojo.hbm.xml"></mapping>
+
+	</session-factory>
+</hibernate-configuration>

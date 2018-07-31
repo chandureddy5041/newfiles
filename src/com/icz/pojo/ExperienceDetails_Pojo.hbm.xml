@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.icz.pojo.ExperienceDetails_Pojo" table="experience_details">
+		<id name="e_id">
+			<generator class="increment"></generator>
+		</id>		
+		<property name="u_id"></property>
+		<property name="e_rel_exp"></property>
+		<property name="e_currentcompany"></property>
+		<property name="e_ctc"></property>
+		<property name="e_ectc"></property>
+		<property name="e_total_exp"></property>
+		<property name="e_np"></property>
+		<property name="e_resume"></property>
+		<many-to-one class="com.icz.pojo.UserTable_Pojo" column="u_id"
+			name="u" not-null="true" insert="false" update="false" unique="false"
+			optimistic-lock="true" not-found="exception" embed-xml="true"
+			cascade="all"></many-to-one>
+	</class>
+</hibernate-mapping>

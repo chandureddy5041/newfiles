@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<include file="struts-default.xml" />
+	<package name="default" extends="json-default">
+
+		<action name="home" class="com.icz.action.MainAction" method="reloading">
+			<result name="success">/index.jsp</result>
+			<result name="error">/reload.jsp</result>
+		</action>
+
+		<action name="userlogin" class="com.icz.action.LoginAction"
+			method="login">
+			<result name="success">/reload.jsp</result>
+			<result name="error">/register.jsp</result>
+		</action>
+
+		<action name="userregister" class="com.icz.action.LoginAction"
+			method="register">
+			<result name="success">/register.jsp</result>
+			<result name="error">/register.jsp</result>
+		</action>
+
+		<action name="forgotthepassword" class="com.icz.action.LoginAction"
+			method="passwordforgot">
+			<result name="success">/register.jsp</result>
+			<result name="error">/register.jsp</result>
+		</action>
+
+		<action name="changepassword" class="com.icz.action.LoginAction"
+			method="passwordchange">
+			<result name="success">/register.jsp</result>
+			<result name="error">/register.jsp</result>
+		</action>
+
+		<action name="userlogout" class="com.icz.action.LoginAction"
+			method="logout">
+			<result name="success">/reload.jsp</result>
+		</action>
+
+		<action name="freshercareer" class="com.icz.action.MainAction"
+			method="checkingfresher">
+			<result name="success">/fresher.jsp</result>
+		</action>
+
+		<action name="fresherregistration" class="com.icz.action.MainAction"
+			method="fresherinsert">
+			<result name="success">/fresher.jsp</result>
+			<result name="error">/fresher.jsp</result>
+		</action>
+
+		<action name="experiencecareer" class="com.icz.action.MainAction"
+			method="checkingexperience">
+			<result name="success">/experience.jsp</result>
+		</action>
+
+		<action name="experienceregistration" class="com.icz.action.MainAction"
+			method="experienceinsert">
+			<result name="success">/experience.jsp</result>
+			<result name="error">/experience.jsp</result>
+		</action>
+
+		<action name="contactform" class="com.icz.action.MainAction"
+			method="contactinsert">
+			<result name="success">/contact.jsp</result>
+			<result name="error">/contact.jsp</result>
+		</action>
+
+		<action name="test" class="com.icz.action.MainAction" method="gettestsubjects">
+			<result name="success">/test.jsp</result>
+		</action>
+
+		<action name="practicesubject" class="com.icz.action.MainAction"
+			method="getsubdetails">
+			<result name="success">/testrules_practicepaper.jsp</result>
+		</action>
+
+		<action name="starttest_pp" class="com.icz.action.MainAction"
+			method="getpaper">
+			<result name="success">/starttest_pp.jsp</result>
+		</action>
+
+		<action name="resultpp" class="com.icz.action.MainAction"
+			method="ResultverificationPP">
+			<result name="success">/result_practicepaper.jsp</result>
+		</action>
+		
+		<action name="starttest_ot" class="com.icz.action.MainAction"
+			method="getpaperot">
+			<result name="success">/starttest_ot.jsp</result>
+		</action>
+		
+		<action name="result_onlinetest" class="com.icz.action.MainAction"
+			method="ResultverificationOT">
+			<result name="success">/result_onlinetest.jsp</result>
+		</action>
+
+		<!-- For renaming actions and jsps -->
+
+		<action name="loginregistration" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/register.jsp</result>
+		</action>
+
+		<action name="forgotpassword" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/forgotpassword.jsp</result>
+		</action>
+
+		<action name="freshercareerlogin" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/fresher.jsp</result>
+		</action>
+
+		<action name="experiencecareerlogin" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/experience.jsp</result>
+		</action>
+
+		<action name="clanguage" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/c.jsp</result>
+		</action>
+
+		<action name="cpplanguage" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/c++.jsp</result>
+		</action>
+
+		<action name="javaprogramming" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/java.jsp</result>
+		</action>
+
+		<action name="advjava" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/advancedjava.jsp</result>
+		</action>
+
+		<action name="softwaretesting" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/testing.jsp</result>
+		</action>
+
+		<action name="learnothers" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/others.jsp</result>
+		</action>
+
+		<action name="contactus" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/contact.jsp</result>
+		</action>
+
+		<action name="onlinetestregister" class="com.icz.action.MainAction"
+			method="renaming">
+			<result name="success">/testregister.jsp</result>
+		</action>
+
+	</package>
+</struts>

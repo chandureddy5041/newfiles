@@ -1,0 +1,268 @@
+/*------------------------- Fonts ------------------------*/
+@font-face {
+	font-family: 'anticregular';
+	src: url('../fonts/antic-regular-webfont.eot');
+	src: url('../fonts/antic-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/antic-regular-webfont.woff') format('woff'),  url('../fonts/antic-regular-webfont.ttf') format('truetype'),  url('../fonts/antic-regular-webfont.svg#anticregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*------------------------- Layout styles ------------------------*/
+body {
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/bg-body.jpg);
+	font-size:12px;
+}
+a {
+	outline:none;
+}
+.red{font-size: 10px;
+color: red;}
+a img {
+	border:0;
+	display:block;
+}
+p {
+	font-size:12px;
+	line-height:24px;
+	letter-spacing:0.05em;
+	color:#959595;
+}
+p a {
+	color:#959595;
+}
+p a:hover {
+	color:#1bb5ac;
+}
+/*------------------------- Header ------------------------*/
+#header {
+	background:url(../images/bg-header.jpg);
+	height:130px;
+}
+#header div {
+	margin:0 auto;
+	overflow:hidden;
+	padding:0 0 0 29px;
+	width:931px;
+}
+#header div a#logo {
+	display:block;
+	float:left;
+	margin:25px 0 0;
+}
+#header div ul {
+	float:right;
+	list-style:none;
+	margin:0;
+	overflow:hidden;
+	padding:0;
+}
+#header div ul li {
+	float:left;
+	height:130px;
+	text-align:center;
+	width:110px;
+}
+#header div ul li a {
+	color:#787b66;
+	display:block;
+	height:130px;
+	letter-spacing:.075em;
+	line-height:150px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0 1px 0 #fff;
+	width:110px;
+}
+#header div ul li.selected a {
+	background:url(../images/bg-nav-selected.png) repeat-x;
+}
+#header div ul li.selected a, #header div ul li a:hover {
+	color:#1bb5ac;
+}
+/*------------------------- Body ------------------------*/
+#body,#body1 {
+	margin:0 auto 97px;
+	
+	padding:38px 29px 0;
+	width:902px;
+}
+#body {
+min-height:1005px;
+}
+/*------------------------- Footer ------------------------*/
+#footer {
+	background:url(../images/bg-footer.png) repeat-x;
+	height:130px;
+}
+#footer div {
+	margin:0 auto;
+	padding:0 10px;
+	width:940px;
+}
+#footer div p {
+	color:#5bdee6;
+	display:block;
+	float:left;
+	margin:20px 0;
+}
+#footer div .connect {
+	float:right;
+	padding:14px 0 0;
+	width:auto;
+}
+#footer div .connect a {
+	display:block;
+	float:left;
+	height:30px;
+	margin:0 0 0 28px;
+	text-indent:-99999px;
+	width:30px;
+}
+#footer div .connect a#googleplus {
+	background:url(../images/icons.png) no-repeat 0 0;
+}
+#footer div .connect a#contact {
+	background:url(../images/icons.png) no-repeat -31px 0;
+}
+#footer div .connect a#facebook {
+	background:url(../images/icons.png) no-repeat -62px 0;
+}
+#footer div .connect a#twitter {
+	background:url(../images/icons.png) no-repeat -93px 0;
+}
+
+
+
+#quiz input {
+    vertical-align: middle;
+}
+
+#quiz ol {
+   margin: 0 0 10px 20px;
+}
+
+#quiz ol li {
+   margin: 0 0 20px 0;
+}
+
+#quiz ol li div {
+   padding: 4px 0;
+}
+
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
+}
+
+#results {
+    font: 44px Georgia, Serif;
+}
+
+.active {
+  
+    display: block; 
+}
+
+ul li{
+    display: none;
+}
+
+ 
+.prev {
+float:left;
+}
+
+.next {
+float:right;
+}
+
+
+.butt {
+margin-left:350px;
+}
+.prev,.next,.butt,.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   cursor:pointer;
+   }
+.prev,.next,.butt,.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.prev,.next,.butt,.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+.wrap  {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: -ms-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: -webkit-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    border: 1px solid #777777;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    padding: 12px;
+    position: relative;
+}
+
+.wrap :before, .wrap :after {
+    background: none;
+    bottom: 12px;
+    -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 10px;
+    left: 12px;
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    -moz-transform: skew(-4deg) rotate(-4deg);
+    -webkit-transform: skew(-4deg) rotate(-4deg);
+    transform: skew(-4deg) rotate(-4deg);
+}
+
+.wrap :after {
+    -moz-transform: skew(4deg) rotate(4deg);
+    -webkit-transform: skew(4deg) rotate(4deg);
+    transform: skew(4deg) rotate(4deg);
+    left: auto;
+    right: 12px;
+}
+
+.shadow-bottom:before, .shadow-bottom:after {
+    top: auto;
+    bottom: 12px;
+    -moz-box-shadow: 0 10px 14px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 14px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 14px 12px rgba(0, 0, 0, 0.5);
+}
+.bigfont{
+font-size:20px
+}

@@ -1,0 +1,71 @@
+body{
+	background: linear-gradient(to top, rgb(252, 0, 255), rgb(0, 219, 222));
+}
+
+#search_form h1 {
+    color: #FC00FF;
+    font-size: 3.5em;
+    letter-spacing: 1px;
+    font-weight: 600;
+	text-align:center;
+	text-decoration:underline;
+}
+#search_form h2 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    text-shadow: 0 5px 2px rgba(0, 0, 0, .6);
+    letter-spacing: 1px;
+    font-weight: 600;
+	text-align:center;
+	margin-top:6%;
+}
+#search_form h3 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    text-shadow: 0 5px 2px rgba(0, 0, 0, .6);
+    letter-spacing: 1px;
+    font-weight: 600;
+	text-align:center;
+	margin-top:6%;
+}
+#search_form h4 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    text-shadow: 0 5px 2px rgba(0, 0, 0, .6);
+    letter-spacing: 1px;
+    font-weight: 600;
+	text-align:center;
+	margin-top:5%;
+}
+#search_form p {
+    color: #00DBDE;
+    font-size: 2em;
+    text-shadow: 0 5px 2px rgba(0, 0, 0, .6);
+    letter-spacing: 1px;
+    font-weight: 600;
+	text-align:center;
+	margin-top:5%;
+}
+
+
+#search_form input[type="submit"] {
+    background: linear-gradient(to top, rgb(252, 0, 255), rgb(0, 219, 222));
+    width: 17%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 0.58em 1em;
+    margin-left: 44%;
+    border: 2px solid #fff;
+	margin-top:2.3%;
+	box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.28);
+	margin-bottom:1.8%;
+}
+#search_form input[type="submit"]:hover {
+	background:#fff;
+	color:#FC00FF;
+	border: 2px solid #00DBDE;
+}
+
+
+

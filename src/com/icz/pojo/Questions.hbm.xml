@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.icz.pojo.QuestionsPojo" table="questions">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="question"></property>
+		<property name="a"></property>
+		<property name="b"></property>
+		<property name="c"></property>
+		<property name="d"></property>
+		<property name="correctans"></property>
+		<property name="program"></property>
+		<property name="explanation"></property>
+		<property name="category"></property>
+		<property name="st_id"></property>
+		<property name="subject"></property>
+		<many-to-one class="com.icz.pojo.StatementsPojo" column="st_id"
+			name="sp" not-null="true" insert="false" update="false" unique="false"
+			optimistic-lock="true" not-found="exception" embed-xml="true"
+			cascade="all" />
+	</class>
+</hibernate-mapping>
